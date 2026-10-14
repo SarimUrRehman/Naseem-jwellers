@@ -23,6 +23,16 @@ import {
   CheckCircle2,
 } from 'lucide-react';
 
+import heroImage from './assets/images/hero_luxury_jewellery_1791989175002.jpg';
+import productBridalSetImage from './assets/images/product_bridal_set_1791989174589.jpg';
+import productDiamondRingImage from './assets/images/product_diamond_ring_1791989177151.jpg';
+import productGoldBanglesImage from './assets/images/product_gold_bangles_1791989176701.jpg';
+import productBridalKundanSetImage from './assets/images/product_bridal_kundan_set_1791989213919.jpg';
+import productJhumkaEarringsImage from './assets/images/product_jhumka_earrings_1791989177125.jpg';
+import productGoldChokerImage from './assets/images/product_gold_choker_1791989211945.jpg';
+import productEmeraldRingImage from './assets/images/product_emerald_ring_1791989213673.jpg';
+import productTraditionalChainImage from './assets/images/product_traditional_chain_1791989212185.jpg';
+
 // ============================================================================
 // SITE CONFIGURATION & CONTENT (EASY TO EDIT)
 // ============================================================================
@@ -77,7 +87,7 @@ export const SITE_CONFIG = {
       name: "Noor 22K Filigree Bridal Choker Set",
       category: "Bridal",
       purity: "22K Gold & Fine Pearls",
-      image: "/src/assets/images/product_bridal_set_1791989174589.jpg",
+      image: productBridalSetImage,
       description: "Regal handcrafted choker with delicate jaali filigree, matched with royal chandelier jhumkas and South Sea pearl droplets."
     },
     {
@@ -85,7 +95,7 @@ export const SITE_CONFIG = {
       name: "Empress Solitaire Diamond Ring",
       category: "Rings",
       purity: "21K Gold & Certified Diamond",
-      image: "/src/assets/images/product_diamond_ring_1791989177151.jpg",
+      image: productDiamondRingImage,
       description: "Brilliant round-cut solitaire diamond mounted in a lustrous 21K yellow gold six-prong setting."
     },
     {
@@ -93,7 +103,7 @@ export const SITE_CONFIG = {
       name: "Royal Mughal Kangan & Kara Bangles",
       category: "Bangles",
       purity: "22K Solid Gold",
-      image: "/src/assets/images/product_gold_bangles_1791989176701.jpg",
+      image: productGoldBanglesImage,
       description: "Intricately hand-engraved traditional Pakistani gold kangan pair featuring antique floral motifs and safety clasp."
     },
     {
@@ -101,7 +111,7 @@ export const SITE_CONFIG = {
       name: "Nizam Polki & Kundan Royal Bridal Set",
       category: "Bridal",
       purity: "22K Gold, Polki & Rubies",
-      image: "/src/assets/images/product_bridal_kundan_set_1791989213919.jpg",
+      image: productBridalKundanSetImage,
       description: "Grand wedding ensemble with uncut Polki stones, hand-enameled meenakari accents, matching jhumkas, and maang tikka."
     },
     {
@@ -109,7 +119,7 @@ export const SITE_CONFIG = {
       name: "Heritage Traditional Meenakari Jhumkas",
       category: "Earrings",
       purity: "22K Gold & Natural Pearls",
-      image: "/src/assets/images/product_jhumka_earrings_1791989177125.jpg",
+      image: productJhumkaEarringsImage,
       description: "Timeless bell-shaped Pakistani jhumkas featuring delicate filigree dome work, ruby highlights, and cascading pearls."
     },
     {
@@ -117,7 +127,7 @@ export const SITE_CONFIG = {
       name: "Lustre 22K Filigree Collar Choker",
       category: "Necklaces",
       purity: "22K Yellow Gold",
-      image: "/src/assets/images/product_gold_choker_1791989211945.jpg",
+      image: productGoldChokerImage,
       description: "Delicate lattice collar choker with a central flower medallion, designed for contemporary festive wear."
     },
     {
@@ -125,7 +135,7 @@ export const SITE_CONFIG = {
       name: "Imperial Emerald & Diamond Cocktail Ring",
       category: "Rings",
       purity: "21K Gold, Emerald & Diamonds",
-      image: "/src/assets/images/product_emerald_ring_1791989213673.jpg",
+      image: productEmeraldRingImage,
       description: "A rich green cushion-cut emerald encircled by a halo of glittering diamonds in textured 21K yellow gold."
     },
     {
@@ -133,7 +143,7 @@ export const SITE_CONFIG = {
       name: "Dastkari 22K Gold Rope Haar Necklace",
       category: "Necklaces",
       purity: "22K Heavy Gold",
-      image: "/src/assets/images/product_traditional_chain_1791989212185.jpg",
+      image: productTraditionalChainImage,
       description: "Substantial multi-strand twisted gold rope chain joined by a traditional carved mughal pendant."
     },
     {
@@ -141,7 +151,7 @@ export const SITE_CONFIG = {
       name: "Zehra Antique Chandbali Earrings",
       category: "Earrings",
       purity: "22K Yellow Gold",
-      image: "/src/assets/images/product_jhumka_earrings_1791989177125.jpg",
+      image: productJhumkaEarringsImage,
       description: "Graceful crescent-moon drops with fine wire filigree, ruby accents, and dangling micro-pearls."
     }
   ]
