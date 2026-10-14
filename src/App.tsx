@@ -454,17 +454,17 @@ export default function App() {
                 {/* Card Container */}
                 <div className="relative rounded-xl overflow-hidden border border-[#D4AF37]/40 bg-[#0F2A22]/90 shadow-2xl">
                   <div className="aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-[#0F2A22]">
-                    <img
-                      src="/src/assets/images/hero_luxury_jewellery_1791989175002.jpg"
-                      alt="Handcrafted luxury gold bridal jewellery set by Naseem Jeweller's"
-                      className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
-                      loading="eager"
-                      referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        // Fallback in case of any filesystem mismatch
-                        e.currentTarget.style.display = 'none';
-                      }}
-                    />
+                   
+<img
+  src={heroImage}
+  alt="Handcrafted luxury gold bridal jewellery set by Naseem Jeweller's"
+  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+  loading="eager"
+  onError={(e) => {
+    console.error("Hero image failed to load:", heroImage);
+  }}
+/>
+
                   </div>
 
                   {/* Image Caption Footer Bar */}
