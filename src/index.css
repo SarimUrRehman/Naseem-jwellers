@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+  --color-emerald-deep: #0b0f0e;
+  --color-emerald-surface: #0f2a22;
+  --color-emerald-card: #13241e;
+  --color-gold-base: #d4af37;
+  --color-gold-light: #f5e6a8;
+  --color-gold-dark: #aa820a;
+  --color-ivory: #faf6ee;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0f0e;
+    color: #faf6ee;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Metallic Gold Gradients */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #f5e6a8 0%, #d4af37 50%, #f3d878 75%, #aa820a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #d4af37 0%, #f5e6a8 50%, #c59b27 100%);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, #d4af37, #f5e6a8, #aa820a) 1;
+}
+
+/* Subtle Shimmer Sweep on Hover */
+.shimmer-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(245, 230, 168, 0.25),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: none;
+}
+
+.shimmer-hover:hover::after {
+  left: 200%;
+  transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Floating WhatsApp gentle pulse */
+@keyframes gentle-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 2.4s infinite;
+}
+
+/* Sparkle floating animation */
+@keyframes float-sparkle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translateY(-12px) rotate(180deg) scale(1.15);
+    opacity: 0.85;
+  }
+}
+
+.animate-float-sparkle {
+  animation: float-sparkle 6s ease-in-out infinite;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

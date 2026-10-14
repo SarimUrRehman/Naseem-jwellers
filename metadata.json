@@ -1,0 +1,6 @@
+{
+  "name": "Naseem Jeweller's",
+  "description": "Gold & Diamond Jewellery in Orangi Town, Karachi. Timeless elegance, pure certified gold, and bespoke Pakistani bridal jewellery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
